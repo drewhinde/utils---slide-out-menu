@@ -1,0 +1,43 @@
+html, body {
+    display: block;
+   
+    background: #000;
+    color: #fff;
+}
+
+nav {
+    display: block;
+    position: fixed;
+    box-sizing: border-box;
+    top: 0;
+    left: -100vw;
+    z-index: 9999;
+    padding: .5em, 1em, .5em, 1em;
+    width: 100vw;
+    height: 50vh;
+    text-align: center;
+    background: red;
+    transition: all 1s;
+}
+
+nav.open {
+    left:0;
+}
+
+nav *:first-child {
+    position: fixed;
+    padding: 1em;
+    cursor: pointer;
+    left:0;
+    top: 50vh;
+    clear: both;
+}
+
+nav a {
+    display: block;
+    font-size: 4em;
+    color: #000;
+    font-family: arial;
+    text-decoration: none;
+    margin-top: .2em;
+}
